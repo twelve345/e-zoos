@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="280" height="200">
+  <!-- Turtle - 3/4 Front View - Mosaic/Stained Glass Style -->
+
+  <!-- Back legs (behind) -->
+  <polygon points="45,155 70,150 80,175 60,185 40,175" fill="#3A5232"/>
+  <polygon points="200,150 225,155 230,175 215,185 195,175" fill="#3A5232"/>
+
+  <!-- Shell base shadow -->
+  <polygon points="60,145 100,160 140,165 180,160 220,145 210,170 140,180 70,170" fill="#2D4225"/>
+
+  <!-- Shell - mosaic pieces -->
+  <polygon points="90,85 120,75 150,80 140,105 110,110 85,100" fill="#5D7A55"/>
+  <polygon points="150,80 180,75 195,90 185,110 155,105 140,105" fill="#4D6A45"/>
+  <polygon points="85,100 110,110 105,135 80,130 65,115" fill="#4D6A45"/>
+  <polygon points="110,110 140,105 145,130 115,140 105,135" fill="#6D8A65"/>
+  <polygon points="140,105 155,105 160,130 145,130" fill="#5D7A55"/>
+  <polygon points="155,105 185,110 190,130 160,130" fill="#4D6A45"/>
+  <polygon points="185,110 195,90 215,105 205,125 190,130" fill="#5D7A55"/>
+  <polygon points="65,115 80,130 75,150 55,145 50,130" fill="#5D7A55"/>
+  <polygon points="80,130 105,135 100,155 75,150" fill="#3D5A35"/>
+  <polygon points="105,135 115,140 110,160 100,155" fill="#4D6A45"/>
+  <polygon points="115,140 145,130 150,155 120,160 110,160" fill="#5D7A55"/>
+  <polygon points="145,130 160,130 165,155 150,155" fill="#3D5A35"/>
+  <polygon points="160,130 190,130 185,155 165,155" fill="#4D6A45"/>
+  <polygon points="190,130 205,125 210,145 195,155 185,155" fill="#5D7A55"/>
+  <polygon points="205,125 215,105 230,120 225,145 210,145" fill="#3D5A35"/>
+
+  <!-- Shell rim -->
+  <polygon points="50,130 65,145 75,150 60,155 45,145" fill="#2D4225"/>
+  <polygon points="75,150 100,155 110,160 100,168 75,160 60,155" fill="#2D4225"/>
+  <polygon points="110,160 150,155 165,155 160,168 120,170 100,168" fill="#2D4225"/>
+  <polygon points="165,155 195,155 210,145 220,155 200,168 160,168" fill="#2D4225"/>
+  <polygon points="210,145 225,145 235,135 230,150 220,155" fill="#2D4225"/>
+
+  <!-- Front legs -->
+  <polygon points="55,150 75,145 85,160 90,180 75,190 55,185 45,170" fill="#5D7B53"/>
+  <polygon points="195,145 215,150 225,170 220,185 200,190 185,180 190,160" fill="#5D7B53"/>
+
+  <!-- Claws -->
+  <circle cx="55" cy="185" r="5" fill="#3A5232"/>
+  <circle cx="70" cy="190" r="5" fill="#3A5232"/>
+  <circle cx="85" cy="185" r="5" fill="#3A5232"/>
+  <circle cx="195" cy="185" r="5" fill="#3A5232"/>
+  <circle cx="210" cy="190" r="5" fill="#3A5232"/>
+  <circle cx="222" cy="185" r="5" fill="#3A5232"/>
+
+  <!-- Neck -->
+  <polygon points="120,70 145,65 160,70 155,90 140,95 125,90" fill="#5D7B53"/>
+  <polygon points="125,90 140,95 138,75 128,78" fill="#6D8B63"/>
+
+  <!-- Head - mosaic pieces -->
+  <polygon points="115,45 135,35 155,40 160,55 150,65 130,68 115,60" fill="#6D8B63"/>
+  <polygon points="130,68 150,65 155,80 140,85 125,80" fill="#5D7B53"/>
+  <polygon points="115,60 130,68 125,80 110,75 105,60" fill="#7D9B73"/>
+  <polygon points="150,65 160,55 170,60 168,75 155,80" fill="#5D7B53"/>
+
+  <!-- Eyes -->
+  <ellipse cx="122" cy="50" rx="8" ry="6" fill="#1A1A0A"/>
+  <ellipse cx="152" cy="50" rx="8" ry="6" fill="#1A1A0A"/>
+  <circle cx="124" cy="48" r="2.5" fill="#FFFFFF"/>
+  <circle cx="154" cy="48" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Nose/Nostrils -->
+  <circle cx="132" cy="62" r="3" fill="#3A5232"/>
+  <circle cx="142" cy="62" r="3" fill="#3A5232"/>
+
+  <!-- Mouth line -->
+  <path d="M120 72 Q137 78 154 72" fill="none" stroke="#3A5232" stroke-width="2"/>
+</svg>
