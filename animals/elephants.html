@@ -2,35 +2,37 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="keywords" content="zoo, animals, elephants, virtual zoo, e-zoo, online zoo, free animals">
+    <meta name="description" content="Learn about Elephants at E-ZOOS.BIZ - The Internet's #1 Virtual Zoo Experience!">
+    <meta name="author" content="E-Zoos Webmaster">
     <title>ELEPHANTS - E-ZOOS.BIZ</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="../scripts/effects.js"></script>
 </head>
 <body bgcolor="#87CEEB" text="#000080" link="#0000FF" vlink="#800080" alink="#FF0000">
 
+<!-- SVG Filter for hammered gold texture -->
+<svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+    <defs>
+        <filter id="hammered-gold" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="3" result="noise" seed="5"/>
+            <feDiffuseLighting in="noise" lighting-color="#FFD700" surfaceScale="3" result="light">
+                <feDistantLight azimuth="45" elevation="60"/>
+            </feDiffuseLighting>
+            <feComposite in="light" in2="SourceGraphic" operator="in" result="textured"/>
+            <feBlend in="textured" in2="SourceGraphic" mode="multiply"/>
+        </filter>
+    </defs>
+</svg>
+
+<!-- MAIN LAYOUT TABLE -->
 <table class="main-table" border="0" cellpadding="0" cellspacing="0" align="center">
+
+    <!-- HEADER ROW -->
     <tr>
-        <td colspan="2" class="header-cell">
-            <h1 class="site-title">E-ZOOS.BIZ</h1>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2" class="nav-bar">
-            <a href="../index.html">HOME</a> |
-            <a href="../about.html">ABOUT E-ZOO</a> |
-            <a href="../contact.html">CONTACT US</a> |
-            <a href="../guestbook.html">GUESTBOOK</a> |
-            <a href="../links.html">LINKS</a> |
-            <a href="../news.html">NEWS</a> |
-            <a href="../faq.html">FAQ</a> |
-            <a href="../merchandise.html">MERCHANDISE</a> |
-            <a href="../help.html">HELP</a> |
-            <a href="../search.html">SEARCH</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="sidebar-cell" valign="top">
+        <!-- LEFT SIDEBAR - spans all content rows -->
+        <td class="sidebar-cell" rowspan="3" valign="top">
             <center>
-                <font size="2" color="#8B4513"><b>ANIMALS</b></font><br><br>
                 <a href="lions.html" class="sidebar-btn">LIONS</a>
                 <a href="elephants.html" class="sidebar-btn" style="background-color:#FFD700;">ELEPHANTS</a>
                 <a href="chinchillas.html" class="sidebar-btn">CHINCHILLAS</a>
@@ -44,6 +46,37 @@
                 <a href="snakes.html" class="sidebar-btn">SNAKES</a>
             </center>
         </td>
+
+        <!-- HEADER -->
+        <td class="header-cell">
+            <h1 class="site-title">E-ZOOS.BIZ</h1>
+        </td>
+
+        <!-- RIGHT SIDEBAR - spans all content rows (decorative) -->
+        <td class="sidebar-right" rowspan="3" valign="top" aria-hidden="true">
+            &nbsp;
+        </td>
+    </tr>
+
+    <!-- NAVIGATION ROW -->
+    <tr>
+        <td class="nav-bar">
+            <a href="../index.html">HOME</a>
+            <a href="../about.html">ABOUT E-ZOO</a>
+            <a href="../contact.html">CONTACT US</a>
+            <a href="../guestbook.html">GUESTBOOK</a>
+            <a href="../links.html">LINKS</a>
+            <a href="../news.html">NEWS</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../merchandise.html">MERCHANDISE</a>
+            <a href="../help.html">HELP</a>
+            <a href="../search.html">SEARCH</a>
+        </td>
+    </tr>
+
+    <!-- MAIN CONTENT ROW -->
+    <tr>
+        <!-- MAIN CONTENT -->
         <td class="content-cell" valign="top">
             <center>
                 <font face="Impact" size="7" color="#808080">
@@ -135,14 +168,65 @@
             </center>
         </td>
     </tr>
+
+    <!-- FOOTER ROW -->
     <tr>
-        <td colspan="2" class="footer-cell">
+        <td colspan="3" class="footer-cell">
             <font size="1">
-                &copy; 1999-2000 E-ZOOS.BIZ | <a href="../index.html"><font color="#FFFF00">Home</font></a>
+                You are visitor number:
+                <!-- Hit Counter - No JavaScript! -->
+                <a href="https://www.hitwebcounter.com/" target="_blank">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=21460254&style=0028&nbdigits=6&type=ip&initCount=0"
+                         title="Free Counter"
+                         alt="Free Counter"
+                         border="0">
+                </a>
+                <br><br>
+                &copy; 1999-2000 E-ZOOS.BIZ - All Rights Reserved
+                <br>
+                Last updated: December 31, 1999 (Y2K Ready!)
+                <br><br>
+                <span class="best-viewed">
+                    Best viewed in Netscape Navigator 4.0 or Internet Explorer 5.5 at 800x600 resolution
+                    <br>
+                    This site is <b>Geocities Certified!</b>
+                </span>
+                <br><br>
+                <a href="mailto:webmaster@e-zoos.biz">
+                    <font color="#FFFF00">Email the Webmaster</font>
+                </a>
+                |
+                <a href="../links.html">
+                    <font color="#FFFF00">Cool Links</font>
+                </a>
+                |
+                <a href="../sitemap.html">
+                    <font color="#FFFF00">Site Map</font>
+                </a>
+                |
+                <a href="../guestbook.html">
+                    <font color="#FFFF00">Sign our Guestbook!</font>
+                </a>
             </font>
         </td>
     </tr>
+
 </table>
+
+<br>
+
+<!-- Classic web badge area -->
+<center>
+    <table border="0" cellpadding="5">
+        <tr>
+            <td><font size="1">Made with Notepad</font></td>
+            <td><font size="1">|</font></td>
+            <td><font size="1">No Frames!</font></td>
+            <td><font size="1">|</font></td>
+            <td><font size="1">JavaScript Enhanced</font></td>
+        </tr>
+    </table>
+</center>
 
 </body>
 </html>
