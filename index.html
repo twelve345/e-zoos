@@ -11,48 +11,28 @@
 </head>
 <body bgcolor="#87CEEB" text="#000080" link="#0000FF" vlink="#800080" alink="#FF0000">
 
+<!-- SVG Filter for hammered gold texture -->
+<svg style="position: absolute; width: 0; height: 0;">
+    <defs>
+        <filter id="hammered-gold" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="3" result="noise" seed="5"/>
+            <feDiffuseLighting in="noise" lighting-color="#FFD700" surfaceScale="3" result="light">
+                <feDistantLight azimuth="45" elevation="60"/>
+            </feDiffuseLighting>
+            <feComposite in="light" in2="SourceGraphic" operator="in" result="textured"/>
+            <feBlend in="textured" in2="SourceGraphic" mode="multiply"/>
+        </filter>
+    </defs>
+</svg>
+
 <!-- MAIN LAYOUT TABLE -->
 <table class="main-table" border="0" cellpadding="0" cellspacing="0" align="center">
 
     <!-- HEADER ROW -->
     <tr>
-        <td colspan="2" class="header-cell">
-            <h1 class="site-title">E-ZOOS.BIZ</h1>
-        </td>
-    </tr>
-
-    <!-- NAVIGATION ROW -->
-    <tr>
-        <td colspan="2" class="nav-bar">
-            <a href="index.html">HOME</a> |
-            <a href="about.html">ABOUT E-ZOO</a> |
-            <a href="contact.html">CONTACT US</a> |
-            <a href="guestbook.html">GUESTBOOK</a> |
-            <a href="links.html">LINKS</a> |
-            <a href="news.html">NEWS</a> |
-            <a href="faq.html">FAQ</a> |
-            <a href="merchandise.html">MERCHANDISE</a> |
-            <a href="help.html">HELP</a> |
-            <a href="search.html">SEARCH</a>
-        </td>
-    </tr>
-
-    <!-- MARQUEE ROW -->
-    <tr>
-        <td colspan="2" class="marquee-container">
-            <marquee behavior="scroll" direction="left" scrollamount="3">
-                *** WELCOME TO E-ZOOS.BIZ *** The Internet's BEST Virtual Zoo Since 1999! *** Over 1,000,000 visitors served! *** Now featuring CHINCHILLAS! *** Sign our GUESTBOOK! ***
-            </marquee>
-        </td>
-    </tr>
-
-    <!-- MAIN CONTENT ROW -->
-    <tr>
-        <!-- SIDEBAR -->
-        <td class="sidebar-cell" valign="top">
+        <!-- LEFT SIDEBAR - spans all content rows -->
+        <td class="sidebar-cell" rowspan="3" valign="top">
             <center>
-                <font size="2" color="#8B4513"><b>ANIMALS</b></font>
-                <br><br>
                 <a href="animals/lions.html" class="sidebar-btn">LIONS</a>
                 <a href="animals/elephants.html" class="sidebar-btn">ELEPHANTS</a>
                 <a href="animals/chinchillas.html" class="sidebar-btn">CHINCHILLAS</a>
@@ -64,39 +44,45 @@
                 <a href="animals/sharks.html" class="sidebar-btn">SHARKS</a>
                 <a href="animals/spiders.html" class="sidebar-btn">SPIDERS</a>
                 <a href="animals/snakes.html" class="sidebar-btn">SNAKES</a>
-                <br><br>
-                <img src="images/under-construction.svg" alt="Under Construction" width="100" height="40">
             </center>
         </td>
 
+        <!-- HEADER -->
+        <td class="header-cell">
+            <h1 class="site-title">E-ZOOS.BIZ</h1>
+        </td>
+
+        <!-- RIGHT SIDEBAR - spans all content rows (decorative) -->
+        <td class="sidebar-right" rowspan="3" valign="top">
+            &nbsp;
+        </td>
+    </tr>
+
+    <!-- NAVIGATION ROW -->
+    <tr>
+        <td class="nav-bar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT E-ZOO</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="guestbook.html">GUESTBOOK</a>
+            <a href="links.html">LINKS</a>
+            <a href="news.html">NEWS</a>
+            <a href="faq.html">FAQ</a>
+            <a href="merchandise.html">MERCHANDISE</a>
+            <a href="help.html">HELP</a>
+            <a href="search.html">SEARCH</a>
+        </td>
+    </tr>
+
+    <!-- MAIN CONTENT ROW -->
+    <tr>
         <!-- MAIN CONTENT -->
         <td class="content-cell" valign="top">
             <center>
-                <font size="5" color="#4682B4"><b>Welcome to E-ZOOS.BIZ!</b></font>
-                <br>
-                <font size="2"><i>Your #1 destination for virtual animal encounters!</i></font>
-            </center>
-
-            <hr>
-
-            <p>
-                <font face="Comic Sans MS" size="2">
-                    Greetings, fellow animal enthusiast! You have stumbled upon the
-                    <b>GREATEST</b> collection of animals on the World Wide Web!
-                    Our team of expert zoologists (my nephew Kevin, age 12) has
-                    assembled an <u>unparalleled</u> database of animal facts and
-                    photographs!
-                </font>
-            </p>
-
-            <center>
-                <font size="4" color="#FF0000"><b>~*~ FEATURED ANIMALS ~*~</b></font>
-                <br><br>
-
                 <!-- Featured Animals - Table Layout for 1999 compatibility -->
-                <table border="0" cellpadding="20" cellspacing="0" align="center">
+                <table border="0" cellpadding="0" cellspacing="0" align="center">
                     <tr>
-                        <td align="center" valign="bottom">
+                        <td align="center" valign="bottom" style="padding: 30px 0 20px 0;">
                             <a href="animals/lions.html">
                                 <img src="images/animals/lionwalk.gif"
                                      alt="Lion"
@@ -104,9 +90,9 @@
                                      border="0">
                             </a>
                             <br>
-                            <font face="Arial, Helvetica, sans-serif" size="4" color="#4682B4"><b>Lion</b></font>
+                            <font face="Arial, Helvetica, sans-serif" size="6" color="#4682B4"><b>Lion</b></font>
                         </td>
-                        <td align="center" valign="bottom">
+                        <td align="center" valign="bottom" style="padding: 30px 0 20px 0;">
                             <a href="animals/turtles.html">
                                 <img src="images/animals/turtle12.gif"
                                      alt="Turtle"
@@ -114,61 +100,10 @@
                                      border="0">
                             </a>
                             <br>
-                            <font face="Arial, Helvetica, sans-serif" size="4" color="#4682B4"><b>Turtle</b></font>
+                            <font face="Arial, Helvetica, sans-serif" size="6" color="#4682B4"><b>Turtle</b></font>
                         </td>
                     </tr>
                 </table>
-
-                <br>
-                <font size="1">
-                    <span class="badge-new">NEW!</span> Click on an animal to learn more!
-                    <span class="badge-hot">HOT!</span>
-                </font>
-
-                <hr>
-
-                <!-- Announcements -->
-                <table bgcolor="#FFFFCC" border="2" cellpadding="10" cellspacing="0" width="90%">
-                    <tr>
-                        <td>
-                            <font face="Arial" size="2">
-                                <b><font color="#FF0000">ANNOUNCEMENT:</font></b>
-                                Due to an unfortunate incident involving the server hamster
-                                (Mr. Whiskers), some pages may load slower than usual.
-                                We are working on acquiring a replacement hamster.
-                                Thank you for your patience!
-                                <br><br>
-                                <b>TIP:</b> Add us to your <font color="#0000FF">BOOKMARKS</font>!
-                                Press Ctrl+D now!
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-
-                <br>
-
-                <!-- Fun Facts Section -->
-                <table bgcolor="#E0FFFF" border="1" cellpadding="10" cellspacing="0" width="90%">
-                    <tr bgcolor="#4682B4">
-                        <td><font color="#FFFFFF" size="3"><b>~*~ DID YOU KNOW? ~*~</b></font></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <font face="Comic Sans MS" size="2">
-                                A group of flamingos is called a "flamboyance"!
-                                This is because flamingos are naturally fabulous
-                                and refuse to be associated with boring collective nouns
-                                like "herd" or "pack."
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><br>
-
-                <font size="2">
-                    <a href="guestbook.html"><img src="images/email.svg" alt="Sign Guestbook" border="0" width="30" height="20"> Sign our Guestbook!</a>
-                </font>
 
             </center>
         </td>
@@ -176,10 +111,22 @@
 
     <!-- FOOTER ROW -->
     <tr>
-        <td colspan="2" class="footer-cell">
+        <td colspan="3" class="footer-cell">
             <font size="1">
                 You are visitor number:
-                <span id="visitor-counter" class="visitor-counter">00001337</span>
+                <!-- Statcounter code for e-zoos.biz -->
+                <script type="text/javascript">
+                var sc_project=13186981;
+                var sc_invisible=0;
+                var sc_security="49406a88";
+                var scJsHost = "https://";
+                document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+                "statcounter.com/counter/counter.js'></"+"script>");
+                </script>
+                <noscript><div class="statcounter"><a title="Web Analytics"
+                href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                src="https://c.statcounter.com/13186981/0/49406a88/0/" alt="Web Analytics"
+                referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
                 <br><br>
                 &copy; 1999-2000 E-ZOOS.BIZ - All Rights Reserved
                 <br>
@@ -201,6 +148,10 @@
                 |
                 <a href="sitemap.html">
                     <font color="#FFFF00">Site Map</font>
+                </a>
+                |
+                <a href="guestbook.html">
+                    <font color="#FFFF00">Sign our Guestbook!</font>
                 </a>
             </font>
         </td>
