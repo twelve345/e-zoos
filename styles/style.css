@@ -23,58 +23,77 @@ body {
 
 /* Main container table styling */
 .main-table {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.main-table td {
+    box-sizing: border-box;
 }
 
 /* Header styling */
 .header-cell {
-    background-color: #ADD8E6;
+    width: 612px;
+    background-color: #4682B4;
     text-align: center;
     padding: 10px;
 }
 
 .site-title {
-    font-family: Impact, "Arial Black", sans-serif;
-    font-size: 48px;
-    color: #FFD700;
-    text-shadow: 3px 3px 0px #8B4513,
-                 -1px -1px 0px #000080,
-                 1px -1px 0px #000080,
-                 -1px 1px 0px #000080;
+    font-family: "Marker Felt Wide", "Marker Felt", -apple-system, sans-serif;
+    font-size: 81px;
+    font-style: italic;
+    color: #FFFF66;
     letter-spacing: 2px;
     margin: 0;
+    filter: url(#hammered-gold) drop-shadow(-1px -1px 0px #000080) drop-shadow(1px -1px 0px #000080) drop-shadow(-1px 1px 0px #000080);
 }
 
 /* Navigation bar */
 .nav-bar {
-    background-color: #B0E0E6;
-    padding: 5px;
+    width: 612px;
+    background-color: #D3D3D3;
+    padding: 2px;
     text-align: center;
     border-top: 2px solid #4682B4;
-    border-bottom: 2px solid #4682B4;
+    white-space: nowrap;
 }
 
 .nav-bar a {
-    color: #000080;
+    color: #666666;
     text-decoration: none;
-    font-family: Arial, sans-serif;
+    font-family: "Marker Felt", "Marker Felt Wide", -apple-system, sans-serif;
     font-size: 11px;
     font-weight: bold;
-    padding: 2px 8px;
-    margin: 0 2px;
+    padding: 1px 4px;
+    margin: 0 1px;
+}
+
+.nav-bar a:visited {
+    color: #666666;
 }
 
 .nav-bar a:hover {
-    color: #FF0000;
-    text-decoration: underline;
+    color: #333333;
+    text-decoration: none;
 }
 
 /* Sidebar styling */
 .sidebar-cell {
     width: 140px;
-    background-image: url('../images/wood-bg.svg');
+    background-image: url('../images/zebra-pattern.png');
+    background-color: #DEB887;
+    vertical-align: top;
+    padding: 10px 5px;
+}
+
+/* Right sidebar - decorative only */
+.sidebar-right {
+    width: 48px;
+    background-image: url('../images/zebra-pattern.png');
     background-color: #DEB887;
     vertical-align: top;
     padding: 10px 5px;
@@ -83,8 +102,8 @@ body {
 /* Sidebar buttons */
 .sidebar-btn {
     display: block;
-    width: 120px;
-    margin: 5px auto;
+    width: 85px;
+    margin: 10px auto;
     padding: 5px 10px;
     font-family: Arial, sans-serif;
     font-size: 12px;
@@ -108,6 +127,7 @@ body {
 
 /* Main content area */
 .content-cell {
+    width: 612px;
     background-color: #B0E0E6;
     vertical-align: top;
     padding: 20px;
